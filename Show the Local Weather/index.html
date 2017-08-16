@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Show the Local Weather</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <p>今日天气</p>
+        </div>
+    </header>
+    <section id="section-weather">
+        <div id="main">
+            <div id="right-weather">
+                <div id="local-info">
+                    <!-- 所在当地信息 -->
+                    <p class="local-city"></p>
+                    <p class="nation"></p>
+                    <p class="local-time"></p>
+                </div>
+                <div id="weather-info">
+                    <!-- 当前日期天气状况 -->
+                    <p class="weather-description"></p>
+                    <p class="now-degree-p"><span class="now-degree"></span><span>°</span></p>
+                    <p class="suggestion"></p>
+                </div>
+                <div class="future-weather">
+                    <p class="future-p">未来天气预报</p>
+                    <div class="forecast forecast-one">
+                        <p class="forecast-p one-date">今日夜间</p>
+                        <p class="forecast-p one-description"></p>
+                        <p class="forecast-p one-tmp"><span class="one-max"></span><span>°</span><span>~</span><span class="one-min"></span><span>°</span></p>
+                    </div>
+                    <div class="forecast forecast-two">
+                        <p class="forecast-p two-date">明日白天</p>
+                        <p class="forecast-p two-description"></p>
+                        <p class="forecast-p two-tmp"><span class="two-max"></span><span>°</span><span>~</span><span class="two-min"></span><span>°</span></p>
+                    </div>
+                    <div class="forecast forecast-three">
+                        <p class="forecast-p three-date">明日白天</p>
+                        <p class="forecast-p three-description"></p>
+                        <p class="forecast-p three-tmp"><span class="three-max"></span><span>°</span><span>~</span><span class="three-min"></span><span>°</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="left-self">
+                <p class="self">个人介绍</p>
+                <p class="produce">
+                    自学前端一枚，热爱编程。有独立解决问题的能力。工作细致。具有良好写作习惯。
+                </p>
+                <p class="skill">掌握技能</p>
+                <ul class="skill-ul">
+                    <li>HTML(5)</li>
+                    <li>CSS(3)</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>React</li>
+                    <li>JSON</li>
+                </ul>
+                <p class="other">个人其他作品</p>
+                <ul class="other-page">
+                    <li><a href="https://frankwang1991.github.io/wang-resume/index.html">个人简历</a></li>
+                    <li><a href="https://github.com/FrankWang1991/freeCodeCamp/tree/master/Build%20a%20Random%20Quote%20Machine">Random Quote</a></li>
+                    <li><a href="https://github.com/FrankWang1991/">Github</a></li>
+                    <li><a href="http://blog.csdn.net/peng_9">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <p class="contact">
+                联系方式：153-0101-2136 或者 <a href="mailto:wsgoodman@163.com">给我发邮件</a><span class="maker">--made by <a href="https://github.com/FrankWang1991/">wangsen</a></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+#header {
+    height: 75px;
+    background: rgba(52, 52, 58, 0.6);
+    margin-bottom: 16px;
+}
+
+body {
+    background: url(../images/clouds-2517653_1920.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+#header p {
+    font-size: 32px;
+    color: #fff;
+    margin-left: 100px;
+    line-height: 75px;
+}
+
+#main {
+    padding-left: 200px;
+}
+
+
+/*左半拉样式*/
+
+#left-self {
+    width: 180px;
+    float: left;
+    margin-left: -100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .54);
+    left: -190px;
+    color: #fff;
+}
+
+#left-self .self,
+.other,
+.skill {
+    text-align: center;
+    font-size: 20px;
+    padding: 16px 10px 16px 10px;
+}
+
+.produce {
+    font-size: 16px;
+    padding: 12px;
+}
+
+.other-page,
+.skill-ul {
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px;
+}
+
+.other-page a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.skill-ul li {
+    height: 22px;
+    line-height: 22px;
+    padding-left: 12px;
+}
+
+.other-page li {
+    height: 24px;
+    text-decoration: underline;
+    line-height: 24px;
+    padding-left: 12px;
+}
+
+
+/*右半拉样式*/
+
+#right-weather {
+    width: 100%;
+    float: left;
+    position: relative;
+    background-color: rgba(0, 0, 0, .54);
+}
+
+#local-info {
+    padding: 16px 0 16px 60px;
+    height: 150px;
+    color: #fff;
+}
+
+#local-info .local-city {
+    font-size: 32px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#local-info .nation {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#local-info .local-time {
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#weather-info {
+    padding: 16px 0 16px 40px;
+    color: #fff;
+}
+
+#weather-info .weather-description {
+    font-size: 40px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#weather-info .high-low {
+    font-size: 32px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#weather-info .now-degree-p {
+    font-size: 80px;
+    font-weight: 700;
+    height: 100px;
+    line-height: 100px;
+}
+
+#weather-info .suggestion {
+    width: 300px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+
+/*预报天气*/
+
+.future-weather {
+    padding: 16px 0 16px 40px;
+    color: #fff;
+}
+.future-p{
+	height: 22px;
+	line-height: 22px;
+	font-size: 20px;
+	padding:10px 0 10px;
+}
+.forecast {
+	background: rgba(52,52,58,0.54);
+	float: left;
+	margin-right: 50px;
+}
+
+.forecast-p {
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+}
+#section-weather:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#footer{
+    height: 75px;
+    background: rgba(52, 52, 58, 0.6);
+    margin-top: 16px;
+
+}
+.contact{
+	    color: #fff;
+    font-size: 22px;
+    line-height: 75px;
+    margin-left: 100px;
+
+}
+.contact a{
+		color: #fff;
+
+}
+.maker{
+	padding-left: 50px;
+}
