@@ -20,7 +20,7 @@ $(document).ready(function() {
 	var threeMax;
 	var threeMin;
 	//获取用户ip
-	$.getJSON("http://weixin.jirengu.com/weather/ip", function(useIp) {
+	$.getJSON("https://weixin.jirengu.com/weather/ip", function(useIp) {
 		userip = useIp.data;
 		url = 'https://free-api.heweather.com/v5/weather?city=' + userip + '&key=24f75f285e1946289fe5b8af7d2abf64';
 		//进行当前天气状况输出
