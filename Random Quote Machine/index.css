@@ -1,42 +1,81 @@
-body{
-	background:url(joshua-earle.jpg) ;
-	background-size: cover;
+body {
+    background: url(joshua-earle.jpg);
+    background-size: cover;
+}
+
+#header {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 25px;
+    background: rgba(52, 53, 59, 0.6);
+}
+
+#card {
+    min-width: 300px;
+    width: 40%;
+    background: rgba(158, 158, 158, 0.8);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+#quote-p {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+#author {
+    height: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#button-div {
+		padding-top: 10px;
+    height: 40px;
+		position: relative;
+}
+#weibo{
+}
+#change{
+}
+/*#weibo span{
+		font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+#change span{
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+
+}*/
+.weibo-span{
+	position: absolute;
+	left: 25%;
+	margin-left: 0;
+}
+.change-span{
+	position: absolute;
+
+	left: 70%;
+	margin-left: 0;
 
 }
-#header{
-	height: 60px;
-	text-align: center;
-	line-height: 60px;
-	color: #fff;
-	font-size: 25px;
-	background:rgba(52,53,59,0.6);
-}
-#card{
-	min-width: 300px;
-	width: 40%;
-	background: rgba(158,158,158,0.8);
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform:translate(-50%,-50%);
-	border-radius: 15px;
-}
-#quote-p{
-	margin-top: 20px;
-	text-align: center;
-	color: #fff;
-	font-size: 36px;
-	line-height: 50px;
-	font-weight: 700;
-}
-#author{
-	height: 25px;
-	color: #fff;
-	font-size: 20px;
-	text-align: right;
-	padding-right: 50px;
-}
-#button-div{
-	height: 40px;
-	padding-left: 50px;
+.icon {
+	line-height: 40px;
+   width: 2em; height: 2em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
 }
