@@ -37,22 +37,23 @@ xmlhttp.onreadystatechange = function() {
 
 			}
 		}
+		//获取天气url
 		var weatherUrl = 'https://free-api.heweather.com/v5/weather?city=' + ipAd + '&key=24f75f285e1946289fe5b8af7d2abf64';
 		xmlhttp.open("GET", weatherUrl, true);
 		xmlhttp.send();
 	}
 }
-
+// 获取ipyrl
 var ipUrl = "https://weixin.jirengu.com/weather/ip";
 xmlhttp.open("GET", ipUrl, true);
 xmlhttp.send();
 
-
-window.onload = function() {
-	var lifeNoteP = document.getElementById('liftNote-p');
-	console.log(document.getElementsByClassName('glyphicon-heart'))
-	document.getElementsByClassName('glyphicon-heart').onClick = function(e) {
-		// lifeNoteP.style.display = "block"
-		alert(e);
-	}
-}
+//鼠标hover事件
+// window.onload = function() {
+// 	var lifeNoteP = document.getElementById('liftNote-p');
+// 	console.log(document.getElementsByClassName('glyphicon-heart'))
+// 	document.getElementsByClassName('glyphicon-heart').onClick = function(e) {
+// 		// lifeNoteP.style.display = "block"
+// 		alert(e);
+// 	}
+// }
