@@ -1,0 +1,205 @@
+body{
+	background: rgba(0,0,0,0.2) url(./images/bg_02.jpg) top center no-repeat;
+}
+*{
+	margin:0;
+	padding:0;
+}
+.navbar-brand{
+	padding:5px;
+}
+#brand{
+	height: 40px;
+}
+#weather{
+	/*height: 500px;*/
+	/*background: lightgray;*/
+	/*position: relative;*/
+}
+#allWeather{
+	height: 600px;
+	position: relative;
+}
+
+/*天气预报未来三天*/
+#forecastContainer{
+	max-width: 280px;
+	background: rgba(0,0,0,0.3);
+	margin:0 auto;
+	padding:0px 16px;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+#forecast-title{
+	font-size: 20px;
+	height: 24px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+	padding:16px 0px;
+}
+/*end 天气预报*/
+#self{
+	height: 450px;
+	/*background: orange;*/
+}
+#local-div{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+#local-p{
+	font-size: 28px;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+
+}
+#local-time{
+	font-size: 18px;
+	color: #fff;
+	height: 25px;
+	line-height: 25px;
+}
+/*当前天气*/
+#weatherNow{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+#nowImg{
+	text-align: center;
+}
+#nowDegree{
+	font-size: 100px;
+	/*font-weight: 700;*/
+	color: #fff;
+	text-align: center;
+	font-family: "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+}
+.nowInfo{
+	height: 46px;
+	background:rgba(0,0,0,0.3);
+	border-radius: 20px;
+	text-align: center;
+	padding:0px 15px;
+}
+.nowInfo p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 46px;
+}
+#aqi{
+	position: absolute;
+	/*left: 700px;*/
+	top: 200px;
+	right: 100px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+#aqi p{
+	font-size: 16px;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	margin:6px;
+}
+#life{
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	transform:translateX(-50%);
+	margin:10px 0;
+
+}
+#life .icon{
+	color: #fff;
+	font-size: 30px;
+}
+#life .icon span{
+	cursor: pointer;
+}
+#liftNote-p{
+	/*display: none;*/
+	border-radius: 10px;
+	padding:5px;
+	position: absolute;
+	left:-50px;
+	line-height: 20px;
+	font-size: 16px;
+	width: 150px;
+	color: #fff;
+	background:rgba(0,0,0,0.3);
+}
+#liftNote-p:before{
+	content:'';
+	position: absolute;
+	left: 53px;
+	top: -24px;
+	border-width: 12px;
+	border-style: solid;
+	border-color: transparent transparent rgba(0,0,0,0.3) transparent;
+}
+
+/*自我简介板块*/
+#selfContainer{
+	max-width: 280px;
+	background: rgba(0,0,0,0.3);
+	margin:0 auto;
+	padding:0px 16px 20px;
+	border-radius: 10px;
+}
+#selfContainer p:first-child{
+	text-align:center;
+	padding:16px 0px;
+	font-size: 20px;
+	color: #fff;
+}
+#selfContainer p:nth-child(2){
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 0px;
+}
+.skill{
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	padding:16px 0;
+}
+#selfContainer ul{
+	list-style: none;
+	margin-left: 20px;
+}
+#selfContainer ul li{
+	font-size: 16px;
+	height: 24px;
+	color: #fff;
+	line-height: 24px;
+}
+.skill-ul{
+	position: relative;
+}
+.other{
+		text-align:center;
+	padding:16px 0px;
+	font-size: 20px;
+	color: #fff;
+}
+.other-page a{
+	font-size: 16px;
+	color: #fff;
+	line-height: 20px;
+}
+/*进度条*/
+.progress{
+	display: inline-block;
+	width: 80px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	position: absolute;
+	right: 10px;
+}

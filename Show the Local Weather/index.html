@@ -3,84 +3,150 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Show the Local Weather</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <title>Local Weather</title>
+    <meta name="keyword" content="weather,local,当地,当地天气,天气">
+    <link rel="icon" href="images/King_128px.ico" type="image/x-ico">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-    <header>
-        <div id="header">
-            <p>今日天气</p>
-        </div>
-    </header>
-    <section id="section-weather">
-        <div id="main">
-            <div id="right-weather">
-                <div id="local-info">
-                    <!-- 所在当地信息 -->
-                    <p class="local-city"></p>
-                    <p class="nation"></p>
-                    <p class="local-time"></p>
-                </div>
-                <div id="weather-info">
-                    <!-- 当前日期天气状况 -->
-                    <p class="weather-description"></p>
-                    <p class="now-degree-p"><span class="now-degree"></span><span>°</span></p>
-                    <p class="suggestion"></p>
-                </div>
-                <div class="future-weather">
-                    <p class="future-p">未来天气预报</p>
-                    <div class="forecast forecast-one">
-                        <p class="forecast-p one-date">今日夜间</p>
-                        <p class="forecast-p one-description"></p>
-                        <p class="forecast-p one-tmp"><span class="one-max"></span><span>°</span><span>~</span><span class="one-min"></span><span>°</span></p>
-                    </div>
-                    <div class="forecast forecast-two">
-                        <p class="forecast-p two-date">明日白天</p>
-                        <p class="forecast-p two-description"></p>
-                        <p class="forecast-p two-tmp"><span class="two-max"></span><span>°</span><span>~</span><span class="two-min"></span><span>°</span></p>
-                    </div>
-                    <div class="forecast forecast-three">
-                        <p class="forecast-p three-date">明日白天</p>
-                        <p class="forecast-p three-description"></p>
-                        <p class="forecast-p three-tmp"><span class="three-max"></span><span>°</span><span>~</span><span class="three-min"></span><span>°</span></p>
-                    </div>
-                </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="https://frankwang1991.github.io/wang-resume/index.html" class="navbar-brand">
+					<img id="brand" src="./images/King_128px_1101115_easyicon.net.png" alt="Brand">
+				</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <div id="left-self">
-                <p class="self">个人介绍</p>
-                <p class="produce">
-                    自学前端一枚，热爱编程。有独立解决问题的能力。工作细致。具有良好写作习惯。
-                </p>
-                <p class="skill">掌握技能</p>
-                <ul class="skill-ul">
-                    <li>HTML(5)</li>
-                    <li>CSS(3)</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>React</li>
-                    <li>JSON</li>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">查看天气<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">随机名言</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多内容 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">建设中。。。</a></li>
+                            <li><a href="#">建设中。。。</a></li>
+                            <li><a href="#">建设中。。。</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">建设中。。。</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">建设中。。。</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <p class="other">个人其他作品</p>
-                <ul class="other-page">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="输入城市名称(暂未开通)">
+                    </div>
+                    <button type="submit" class="btn btn-default">查询</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="https://frankwang1991.github.io/wang-resume/index.html">个人简历</a></li>
-                    <li><a href="https://frankwang1991.github.io/singlePage/Random%20Quote%20Machine/index.html">Random Quote</a></li>
-                    <li><a href="https://github.com/FrankWang1991/">Github</a></li>
-                    <li><a href="http://blog.csdn.net/peng_9">Blog</a></li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </section>
-    <footer>
-        <div id="footer">
-            <p class="contact">
-                联系方式：153-0101-2136 或者 <a href="mailto:wsgoodman@163.com">给我发邮件</a><span class="maker">--made by <a href="https://github.com/FrankWang1991/">wangsen</a></span>
-            </p>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class=" col-xs-12 col-md-3" id="forecast">
+                <div id="forecastContainer">
+                    <p id="forecast-title">未来天气预报</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6" id="weather">
+                <div id="allWeather">
+                    <div id="local-div">
+                        <p id="local-p">北京</p>
+                        <p id="local-time"></p>
+                    </div>
+                    <div id="weatherNow">
+                        <div id="nowImg"></div>
+                        <p id="nowDegree">30℃</p>
+                        <div class="nowInfo">
+                            <p class="nowInfo-p"><span id="cond"></span>&nbsp;|&nbsp;<span id="wind"></span>&nbsp;|&nbsp;<span id="hum"></span></p>
+                        </div>
+                    </div>
+                    <div id="aqi" class="visible-lg-inline-block visible-md-inline-block">
+                        <p id="pm25">PM2.5:</p>
+                        <p id="qlty">空气质量：</p>
+                    </div>
+                    <div id="life">
+                        <p class="icon"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-tint"></span></p>
+                        <div id="liftNote">
+                            <p id="liftNote-p"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 visible-lg-inline-block visible-md-inline-block" id="self">
+                <div id="selfContainer">
+                    <p class="self-p">个人介绍</p>
+                    <p class="produce">
+                        自学前端一枚，热爱编程。有独立解决问题的能力。工作细致。具有良好写作习惯。
+                    </p>
+                    <p class="skill">掌握技能</p>
+                    <ul class="skill-ul">
+                        <li>
+                            HTML(5)
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75 aria-valuemin=" 0 " aria-valuemax="100 " style="width: 75% ">
+                                    <span class="sr-only ">75% Complete (success)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>CSS(3)<div class="progress ">
+                                <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="70 " aria-valuemin="0 " aria-valuemax="100 " style="width: 70% ">
+                                    <span class="sr-only ">70% Complete (success)</span>
+                                </div>
+                            </div></li>
+                        <li>JavaScript<div class="progress ">
+                                <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="63 " aria-valuemin="0 " aria-valuemax="100 " style="width: 63% ">
+                                    <span class="sr-only ">63% Complete (success)</span>
+                                </div>
+                            </div></li>
+                        <li>jQuery<div class="progress ">
+                                <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="70 " aria-valuemin="0 " aria-valuemax="100 " style="width: 70% ">
+                                    <span class="sr-only ">70% Complete (success)</span>
+                                </div>
+                            </div></li>
+                        <li>React<div class="progress ">
+                                <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="60 " aria-valuemin="0 " aria-valuemax="100 " style="width: 60% ">
+                                    <span class="sr-only ">60% Complete (success)</span>
+                                </div>
+                            </div></li>
+                        <li>AJAX<div class="progress ">
+                                <div class="progress-bar progress-bar-success " role="progressbar " aria-valuenow="80 " aria-valuemin="0 " aria-valuemax="100 " style="width: 80% ">
+                                    <span class="sr-only ">80% Complete (success)</span>
+                                </div>
+                            </div></li>
+                    </ul>
+
+                    <p class="other ">个人其他作品</p>
+                    <ul class="other-page ">
+                    	<li><a href="https://frankwang1991.github.io/wang-resume/index.html ">online简历</a></li>
+                        <li><a href="http://www.yidengxuetang.com/node/ ">运营页面</a></li>
+                        <li><a href="https://frankwang1991.github.io/singlePage/Random%20Quote%20Machine/index.html ">Random Quote</a></li>
+                        <li><a href="https://github.com/FrankWang1991/ ">Github</a></li>
+                        <li><a href="http://blog.csdn.net/peng_9 ">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </footer>
-    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js "></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="index.js "></script>
 </body>
 
 </html>
