@@ -1,206 +1,390 @@
-body{
-	background: rgba(0,0,0,0.2) url(./images/bg_02.jpg) top center no-repeat;
+* {
+    margin: 0;
+    padding: 0;
 }
-*{
-	margin:0;
-	padding:0;
+@media screen and (max-width: 767px){
+	body{
+		min-width: 768px;
+	}
 }
-.navbar-brand{
-	padding:5px;
+body {
+    background: rgba(0, 0, 0, 0.2) url(./images/bg_02.jpg) top center no-repeat;
+
 }
-#brand{
-	height: 40px;
+
+.navbar-brand {
+    padding: 5px;
 }
-#weather{
-	/*height: 500px;*/
-	/*background: lightgray;*/
-	/*position: relative;*/
+
+#brand {
+    height: 40px;
 }
-#allWeather{
-	height: 600px;
-	position: relative;
+
+#weather {
+    /*height: 500px;*/
+    /*background: lightgray;*/
+    /*position: relative;*/
 }
+
+#allWeather {
+    height: 600px;
+    position: relative;
+}
+
+
 
 /*天气预报未来三天*/
-#forecastContainer{
-	max-width: 280px;
-	background: rgba(0,0,0,0.3);
-	margin:0 auto;
-	padding:0px 16px;
-	border-radius: 10px;
-	padding-bottom: 20px;
+
+#forecastContainer-pc {
+    max-width: 280px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    padding: 0px 16px;
+    border-radius: 10px;
+    padding-bottom: 20px;
 }
-#forecast-title{
-	font-size: 20px;
-	height: 24px;
-	line-height: 24px;
-	color: #fff;
-	text-align: center;
-	padding:16px 0px;
+
+#forecast-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0px;
 }
+
+.fc-day {
+    text-align: center;
+    padding: 12px 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.fc-date,
+.fc-tmp,
+.fc-rain,
+.fc-wind {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fc-img {
+    height: 50px;
+}
+
+.fc-img img {
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.fc-tmp {}
+
+
+
+/*手机端天气预测样式*/
+
+#phoneforecast {
+    text-align: center;
+}
+
+#forecastcontainer-phone>#forecast-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+#phone-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-div {
+    width: 30%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fc-phone-date,
+.fc-phone-tmp,
+.fc-phone-rain,
+.fc-phone-wind {
+    color: #fff;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.fc-phone-img {
+    margin: 5px auto;
+    height: 100px;
+    background: #fff;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#phone-life-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.life-flex {
+    width: 20%;
+    padding: 0px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+#lifeinfo {
+    color: #fff;
+}
+
+.life-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 5px 0px;
+}
+
+.life-value {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#lifeinfo-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+
 /*end 天气预报*/
-#self{
-	height: 450px;
-	/*background: orange;*/
-}
-#local-div{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 50px;
-	left: 100px;
-}
-#local-p{
-	font-size: 28px;
-	color: #fff;
-	height: 40px;
-	line-height: 40px;
 
+#self {
+    height: 450px;
 }
-#local-time{
-	font-size: 18px;
-	color: #fff;
-	height: 25px;
-	line-height: 25px;
+
+#local-div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
+
+#local-p {
+    font-size: 28px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+
+#local-time {
+    font-size: 18px;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+}
+
+
+
 /*当前天气*/
-#weatherNow{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform:translate(-50%,-50%);
-}
-#nowImg{
-	text-align: center;
-}
-#nowDegree{
-	font-size: 100px;
-	/*font-weight: 700;*/
-	color: #fff;
-	text-align: center;
-	font-family: "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
-}
-.nowInfo{
-	height: 46px;
-	background:rgba(0,0,0,0.3);
-	border-radius: 20px;
-	text-align: center;
-	padding:0px 15px;
-}
-.nowInfo p{
-	color: #fff;
-	font-size: 16px;
-	line-height: 46px;
-}
-#aqi{
-	position: absolute;
-	/*left: 700px;*/
-	top: 200px;
-	right: 100px;
-	border-top: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-}
-#aqi p{
-	font-size: 16px;
-	color: #fff;
-	height: 20px;
-	line-height: 20px;
-	margin:6px;
-}
-#life{
-	position: absolute;
-	left: 50%;
-	top: 80%;
-	transform:translateX(-50%);
-	margin:10px 0;
 
+#weatherNow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-#life .icon{
-	color: #fff;
-	font-size: 30px;
+
+#nowImg {
+    text-align: center;
 }
-#life .icon span{
-	cursor: pointer;
+
+#nowDegree {
+    font-size: 100px;
+    /*font-weight: 700;*/
+    color: #fff;
+    text-align: center;
+    font-family: "Arial", "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
 }
-#liftNote-p{
-	display: none;
-	border-radius: 10px;
-	padding:6px;
-	margin-top: 10px;
-	position: absolute;
-	left:-64px;
-	line-height: 24px;
-	font-size: 16px;
-	width: 150px;
-	color: #fff;
-	background:rgba(0,0,0,0.3);
+
+.nowInfo {
+    height: 46px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    padding: 0px 15px;
 }
-#liftNote-p:before{
-	content:'';
-	position: absolute;
-	left: 68px;
-	top: -24px;
-	border-width: 12px;
-	border-style: solid;
-	border-color: transparent transparent rgba(0,0,0,0.3) transparent;
+
+.nowInfo p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
 }
+
+#aqi {
+    position: absolute;
+    /*left: 700px;*/
+    top: 200px;
+    right: 100px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#aqi p {
+    font-size: 16px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    margin: 6px;
+}
+
+#life {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    margin: 10px 0;
+}
+
+#life .icon {
+    color: #fff;
+    font-size: 30px;
+}
+
+#life .icon span {
+    cursor: pointer;
+}
+
+#life .icon span:first-child {
+    margin-right: 25px;
+}
+
+#life .icon span:nth-child(2) {
+    margin-left: 25px;
+}
+
+#liftNote-p {
+    display: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top: 10px;
+    position: absolute;
+    left: -64px;
+    line-height: 24px;
+    font-size: 16px;
+    width: 150px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#bodytmp-p {
+    display: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top: 10px;
+    position: absolute;
+    left: 55px;
+    line-height: 24px;
+    font-size: 16px;
+    width: 150px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#bodytmp-p:before {
+    content: '';
+    position: absolute;
+    left: 44px;
+    top: -24px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+}
+
+#liftNote-p:before {
+    content: '';
+    position: absolute;
+    left: 68px;
+    top: -24px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+}
+
+
 
 /*自我简介板块*/
-#selfContainer{
-	max-width: 280px;
-	background: rgba(0,0,0,0.3);
-	margin:0 auto;
-	padding:0px 16px 20px;
-	border-radius: 10px;
+
+#selfContainer {
+    max-width: 280px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    padding: 0px 16px 20px;
+    border-radius: 10px;
 }
-#selfContainer p:first-child{
-	text-align:center;
-	padding:16px 0px;
-	font-size: 20px;
-	color: #fff;
+
+#selfContainer p:first-child {
+    text-align: center;
+    padding: 16px 0px;
+    font-size: 20px;
+    color: #fff;
 }
-#selfContainer p:nth-child(2){
-	color: #fff;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 12px 0px;
+
+#selfContainer p:nth-child(2) {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 0px;
 }
-.skill{
-	text-align: center;
-	font-size: 20px;
-	color: #fff;
-	padding:16px 0;
+
+.skill {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding: 16px 0;
 }
-#selfContainer ul{
-	list-style: none;
-	margin-left: 20px;
+
+#selfContainer ul {
+    list-style: none;
+    margin-left: 20px;
 }
-#selfContainer ul li{
-	font-size: 16px;
-	height: 24px;
-	color: #fff;
-	line-height: 24px;
+
+#selfContainer ul li {
+    font-size: 16px;
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
 }
-.skill-ul{
-	position: relative;
+
+.skill-ul {
+    position: relative;
 }
-.other{
-		text-align:center;
-	padding:16px 0px;
-	font-size: 20px;
-	color: #fff;
+
+.other {
+    text-align: center;
+    padding: 16px 0px;
+    font-size: 20px;
+    color: #fff;
 }
-.other-page a{
-	font-size: 16px;
-	color: #fff;
-	line-height: 20px;
+
+.other-page a {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
 }
+
+
+
 /*进度条*/
-.progress{
-	display: inline-block;
-	width: 80px;
-	margin-bottom: 0px;
-	margin-left: 10px;
-	position: absolute;
-	right: 10px;
+
+.progress {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    position: absolute;
+    right: 10px;
 }

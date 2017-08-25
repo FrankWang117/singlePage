@@ -60,9 +60,33 @@
         <!-- Stack the columns on mobile by making one full-width and the other half-width -->
         <div class="row">
             <div class=" col-xs-12 col-md-3" id="forecast">
-                <div id="forecastContainer">
+                <div id="forecastContainer-pc" class="hidden-xs hidden-sm">
                     <p id="forecast-title">未来天气预报</p>
+                    <div id="forecast-pc">
+                        <div class="fc-day" id="fc-one" >
+                            <div class="fc-date" id="one-date">今日夜间</div>
+                            <div class="fc-img" id="one-img"></div>
+                            <div class="fc-tmp" id="one-tmp">26℃</div>
+                            <div class="fc-rain" id="one-rain">降水概率：1</div>
+                            <div class="fc-wind" id="one-wind">北风微风</div>
+                        </div>
+                        <div class="fc-day"  id="fc-two">
+                            <div class="fc-date" id="two-date">2017-09-00</div>
+                            <div class="fc-img" id="two-img"></div>
+                            <div class="fc-tmp" id="two-tmp">26℃</div>
+                            <div class="fc-rain" id="two-rain">降水概率：1</div>
+                            <div class="fc-wind" id="two-wind">北风微风</div>
+                        </div>
+                        <div class="fc-day"  id="fc-three">
+                            <div class="fc-date" id="three-date">2017-09-00</div>
+                            <div class="fc-img" id="three-img"></div>
+                            <div class="fc-tmp" id="three-tmp">26℃</div>
+                            <div class="fc-rain" id="three-rain">降水概率：1</div>
+                            <div class="fc-wind" id="three-wind">北风微风</div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div class="col-xs-12 col-md-6" id="weather">
                 <div id="allWeather">
@@ -82,9 +106,12 @@
                         <p id="qlty">空气质量：</p>
                     </div>
                     <div id="life">
-                        <p class="icon"><span id="w-suggestion" class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-tint"></span></p>
+                        <p class="icon"><span id="w-suggestion" class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;<span id="w-bodytmp" class="glyphicon glyphicon-tint"></span></p>
                         <div id="liftNote">
                             <p id="liftNote-p"></p>
+                        </div>
+                        <div id="bodytmp">
+                            <p id="bodytmp-p"></p>
                         </div>
 
                     </div>
@@ -141,6 +168,59 @@
                         <li><a href="https://github.com/FrankWang1991/ ">Github</a></li>
                         <li><a href="http://blog.csdn.net/peng_9 ">Blog</a></li>
                     </ul>
+                </div>
+            </div>
+            <div id="phoneforecast" class="visible-xs-block visible-sm-block">
+                <div id="forecastcontainer-phone" >
+                    <p id="forecast-title" >未来天气预报</p>
+                    <div id="phone-flex">
+                        <div class="flex-div">
+                        <div class="fc-phone-day" id="fc-phone-one" >
+                            <div class="fc-phone-date" id="phone-one-date">今日夜间</div>
+                            <div class="fc-phone-img" id="phone-one-img"></div>
+                            <div class="fc-phone-tmp" id="phone-one-tmp">26℃</div>
+                            <div class="fc-phone-rain" id="phone-one-rain">降水概率：1</div>
+                            <div class="fc-phone-wind" id="phone-one-wind">北风微风</div>
+                        </div>
+                        </div>
+                        <div class="flex-div">
+                            <div class="fc-phone-day" id="fc-phone-two" >
+                            <div class="fc-phone-date" id="phone-two-date">今日夜间</div>
+                            <div class="fc-phone-img" id="phone-two-img"></div>
+                            <div class="fc-phone-tmp" id="phone-two-tmp">26℃</div>
+                            <div class="fc-phone-rain" id="phone-two-rain">降水概率：1</div>
+                            <div class="fc-phone-wind" id="phone-two-wind">北风微风</div>
+                        </div>
+                        </div>
+                        <div class="flex-div">
+                            <div class="fc-phone-day" id="fc-phone-three" >
+                            <div class="fc-phone-date" id="phone-three-date">今日夜间</div>
+                            <div class="fc-phone-img" id="phone-three-img"></div>
+                            <div class="fc-phone-tmp" id="phone-three-tmp">26℃</div>
+                            <div class="fc-phone-rain" id="phone-three-rain">降水概率：1</div>
+                            <div class="fc-phone-wind" id="phone-three-wind">北风微风</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lifeinfo">
+                    <p id="lifeinfo-title">生活指数</p>
+                <div id="phone-life-flex">
+                    <div class="life-flex">
+                        <p class="life-title">洗车指数</p>
+                        <p class="life-value" id="life-cw"></p>
+                    </div>
+                    <div class="life-flex">
+                        <p class="life-title">穿衣指数</p>
+                        <p class="life-value" id="life-drsg"></p>
+                    </div>
+                    <div class="life-flex">
+                        <p class="life-title">运动指数</p>
+                        <p class="life-value" id="life-sport"></p>
+                    </div>
+                    <div class="life-flex">
+                    <p class="life-title">运动指数</p>
+                        <p class="life-value" id="life-uv"></p></div>
+</div>
                 </div>
             </div>
         </div>
