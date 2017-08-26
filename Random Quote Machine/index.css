@@ -1,5 +1,5 @@
 body {
-    background: url(joshua-earle.jpg);
+    background: url(sam-ferrara-318709.jpg);
     background-size: cover;
 }
 
@@ -15,7 +15,7 @@ body {
 #card {
     min-width: 300px;
     width: 40%;
-    background: rgba(158, 158, 158, 0.8);
+    background: rgba(158, 158, 158, 0.5);
     position: absolute;
     left: 50%;
     top: 50%;
