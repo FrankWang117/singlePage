@@ -24,7 +24,7 @@ xmlhttp.onreadystatechange = function() {
 						document.getElementById('cond').innerHTML = weatherInfo.now.cond.txt;
 						// 插入天气图片
 						var codeImg = weatherInfo.now.cond.code;
-						document.getElementById('nowImg').innerHTML = "<img src='https://cdn.heweather.com/cond_icon/" + codeImg + ".png'>"
+						document.getElementById('nowImg').innerHTML = "<img src='images/" + codeImg + ".png'>"
 							//获取风力
 						document.getElementById('wind').innerHTML = weatherInfo.now.wind.dir + ' ' + weatherInfo.now.wind.sc + "级";
 						document.getElementById('hum').innerHTML = "相对湿度:" + weatherInfo.now.hum + '%';
