@@ -150,6 +150,7 @@ xmlhttp.send();
 
 //鼠标hover事件
 window.onload = function() {
+
 	var lifeNoteP = document.getElementById('liftNote-p');
 	var bodyTmpP = document.getElementById('bodytmp-p');
 	// 生活建议hover
