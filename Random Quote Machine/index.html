@@ -6,59 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Random Quote Machine</title>
-    <link rel="icon" href="./font_font/King_128px.ico" type="image/x-ico"/>
-    <link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./font_font/King_128px.ico" type="image/x-ico" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
-    <header>
-        <div id="header">
+    <!-- <header> -->
+        <!-- <div id="header">
             随机句子生成器
+        </div> -->
+         <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div id="icon-king" class="navbar-header">
+                <a href="https://frankwang1991.github.io/wang-resume/index.html" class="navbar-brand">
+                    <img id="brand" src="./images/King.png" alt="Brand">
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://github.com/FrankWang1991/singlePage/tree/master/Random%20Quote%20Machine">随机名言<span class="sr-only">(current)</span></a></li>
+                    <li><a href="https://frankwang1991.github.io/singlePage/Show%20the%20Local%20Weather/">天气预报</a></li>
+                    <li><a href="https://frankwang1991.github.io/wang-resume/index.html">个人H5简历</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多内容 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.yidengxuetang.com/node/">Nodejs运营页</a></li>
+                            <li><a href="https://github.com/FrankWang1991/FE-Nodejs-PHP-database">后台管理系统</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://blog.csdn.net/peng_9">个人博客</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://github.com/FrankWang1991/">Github页面</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="mailto:wangsen9108@gmail.com">联系我</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-    </header>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- </header> -->
     <section>
         <div id="total" class="container-fluid">
             <div id="card">
                 <p id="quote-p">
-                   <!--  Nothing is true, everything is permitted. -->
+                    <!--  Nothing is true, everything is permitted. -->
                 </p>
                 <p id="author"></p>
                 <div id="button-div">
-                	<span class="weibo-span">
+                    <span class="weibo-span">
                     <a id="weibo" title="分享至微博">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-weibo"></use>
                         </svg>
                         <!-- <span>分享</span> -->
                     </a>
-                  </span>
-                    <span class="change-span">
-												<a id="change" title="再来一个">   <svg class="icon" aria-hidden="true">
+                    </span>
+                    <span class="change-span"><a id="change" title="再来一个">   <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-buy"></use>
                     </svg>
-                    	<!-- <span>点击更换</span> -->
-                  			</a>
+                        <!-- <span>点击更换</span> -->
+                    </a>
                     </span>
                 </div>
             </div>
+            <div id="music">
+                <audio src="./images/Lainey Lou - Melody Lane.mp3" autoplay="true"></audio>
+            </div>
         </div>
     </section>
-    <footer>
+    <!-- <footer>
         <div id="footer">
         </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    </footer> -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text">目前本人正在求职，如果您有想法，<a href="mailto:wangsen9108@gmail.com">联系我</a></p>
+  </div>
+</nav>
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="./font_font/iconfont.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
 </body>
 
 </html>

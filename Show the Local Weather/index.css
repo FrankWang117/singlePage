@@ -10,9 +10,7 @@
 body {
     background: rgba(0, 0, 0, 0.2)  top center ;
     background-image: url(./images/bg_01.jpg);
-
 }
-
 .navbar-brand {
     padding: 5px;
 }
